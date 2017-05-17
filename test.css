@@ -7,6 +7,37 @@ body {
 	min-height: 100%;
 }
 
+header {
+	position: relative;
+	background: white;
+	border-bottom: 2px solid #cccccc;
+	height:90px;
+	width: 100%;
+	clear:both;
+}
+
+main {
+	position: relative;
+	background-image: url("../images/bgimage.png");
+	width: 100%;
+	clear:both;
+	overflow: auto;
+	padding-bottom: 50px;
+	min-height: 90%;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	left:0;
+	border-top: 5px solid #4aaaa5;
+	background: #666666;
+	clear: both;
+	text-align: center;
+}
+
 h1, button{
 	font-size: 24px;
 	font-weight: bold;
@@ -33,6 +64,36 @@ li {
 img{
 	height: 64px;
 	width:64px;
+}
+
+label {
+	color:#777;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+textarea {
+	width: 98%;
+	padding: 5px 1%;
+	border: 1px solid #ddd;
+}
+
+input {
+	color: #ccc;
+	width: 98%;
+	padding: 5px 1%;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+}
+
+button {
+	outline: none;
+	border: none;
+	box-shadow: none;
+	padding:15px 30px;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 30px;
 }
 
 .imgContainer{
@@ -64,17 +125,8 @@ img{
 .imgContainerRight {
 	float: right;
 }
-/*-------------- HEADER CONTENT ----------------*/
-header {
-	position: relative;
-	background: white;
-	border-bottom: 2px solid #cccccc;
-	height:90px;
-	width: 100%;
-	clear:both;
-}
-
-#name {
+/*-------------- Items in the header ----------------*/
+#nameHead {
 	position: absolute;
 	font-weight: bold;
 	padding: 33px 35px;
@@ -82,7 +134,7 @@ header {
 	left:100px;
 	z-index: 1;
 }
-#menu {
+#navList {
 	position: absolute;
 	background: #fff;
 	top: 0px;
@@ -90,33 +142,20 @@ header {
 	padding: 36px 35px;
 	text-align: center;
 	z-index: 2;
-	float: left;
-	clear: left;
 }
-
-#menu li {
+#navList li {
 	padding: 0 20px;
 	font-size: 18px;
 	color: #777;
-   list-style:  none;
 }
-#menuBorder {
+#navMid {
 	border-left: 2px solid #ddd;
 	border-right: 2px solid #ddd;
 }
 
-/* -----------------  MAIN CONTENT -----------------*/
-main {
-	position: relative;
-	background-image: url("../images/bg-image.png");
-	width: 100%;
-	clear:both;
-	overflow: auto;
-	padding-bottom: 50px;
-	min-height: 90%;
-}
-
-.main {
+/* ------------------- Items in the main -------------------*/
+/* -----content ------*/
+.contentSec {
 	position: relative;
 	width: 650px;
 	padding:  30px 30px;
@@ -129,67 +168,35 @@ main {
 	margin:50px;
 	z-index: 2;
 }
-.main h2{
+.contentSec h2{
 	font-size: 23px;
 	padding: 15px;
 	border-bottom: 2px solid #ddd;
 	clear: both;
 	margin-bottom: 30px;
 }
-#bio-image{
+#myPic{
 	float:left;
 	margin-right: 30px;
 	margin-bottom: 15px;
 	height: 210px;
 	width: 210px;
 }
-.main p{
+.contentSec p{
 	line-height: 25px;
 	color: #777777;
 	text-indent: 25px;
 }
-.main ul{
+.contentSec ul{
 	margin:0;
 	width: 100%;
 }
 
-/*-------------- CONTACT FORM CONTENT ------------------*/
-label {
-	color:#777;
-	line-height: 30px;
-	font-size: 20px;
-}
-
-textarea {
-	width: 98%;
-	padding: 5px 1%;
-	border: 1px solid #ddd;
-}
-
-input {
-	color: #ccc;
-	width: 98%;
-	padding: 5px 1%;
-	margin-bottom: 15px;
-	border: 1px solid #ddd;
-}
-
-button {
-	outline: none;
-	border: none;
-	box-shadow: none;
-	padding:15px 30px;
-	font-size: 20px;
-	font-weight: normal;
-	margin-top: 30px;
-}
-
-/*----------------- PORTFOLIO CONTENT ------------------*/ 
 
 
-/*--------------- CONNECT WITH ME CONTENT ---------------*/
-.connect {
-	position: relative;
+/*-----connect-----*/
+.connectSec {
+	position: absolute;
 	width: 270px;
 	height: 174px;
 	right: 0;
@@ -201,13 +208,13 @@ button {
 	margin-right: 100px;
 	z-index: 1;
 }
-.connect ul{
+.connectSec ul{
 	margin: 24px;
 }
-.connect li{
+.connectSec li{
 	margin : 5px;
 }
-.connect h2{
+.connectSec h2{
 	font-size: 20px;
 	padding: 15px 5px;
 	width:200px;
@@ -216,20 +223,8 @@ button {
 	border-bottom: 2px solid #ddd;
 }
 
-/* ----------------- STICKY FOOTER CONTENT ------------------ */
-footer {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	bottom: 0;
-	left:0;
-	border-top: 5px solid #4aaaa5;
-	background: #666666;
-	clear: both;
-	text-align: center;
-}
-
-.foot{
+/* -----------------Items in the foot------------------ */
+.footText{
 	color: #ccc;
 	font-size: 12px;
 	padding:19px;
