@@ -35,35 +35,6 @@ img{
 	width:64px;
 }
 
-.imgContainer{
-	position: relative;
-	height:250px;
-	width:300px;
-	margin-bottom: 30px
-}
-.imgContainer img {
-	position:relative;
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-
-}
-.caption{
-	position: absolute;
-	bottom: 10%;
-	font-size: 18px;
-	background: #4aaaa5;
-	color: white;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	height: 20px;
-	width:90%;
-	z-index:2;
-	padding:5%;
-	text-align: center; 
-}
-.imgContainerRight {
-	float: right;
-}
 /*-------------- HEADER CONTENT ----------------*/
 header {
 	position: relative;
@@ -185,7 +156,35 @@ button {
 }
 
 /*----------------- PORTFOLIO CONTENT ------------------*/ 
+.imgContainer{
+	position: relative;
+	height:250px;
+	width:300px;
+	margin-bottom: 30px
+}
+.imgContainer img {
+	position:relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
 
+}
+.caption{
+	position: absolute;
+	bottom: 10%;
+	font-size: 18px;
+	background: #4aaaa5;
+	color: white;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	height: 20px;
+	width:90%;
+	z-index:2;
+	padding:5%;
+	text-align: center; 
+}
+.imgContainerRight {
+	float: right;
+}
 
 /*--------------- CONNECT WITH ME CONTENT ---------------*/
 .connect {
