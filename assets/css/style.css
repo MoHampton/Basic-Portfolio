@@ -217,7 +217,7 @@ button {
 
 /* ----------------- STICKY FOOTER CONTENT ------------------ */
 footer {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 50px;
 	bottom: 0;
@@ -226,6 +226,7 @@ footer {
 	background: #666666;
 	clear: both;
 	text-align: center;
+	z-index: 1000;
 }
 
 .foot{
